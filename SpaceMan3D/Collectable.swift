@@ -32,11 +32,64 @@ class Collectable {
         return sphereNode
     }
     
-//    class func boxNode() -> SCNNode {
-//        let box = SCNBox(width: 6, height: 6, length: 6, chamferRadius: 0)
-//        let boxNode = SCNNode(geometry: box)
-//        let position = 
-//        
-//        
-//    }
+    class func boxNode() -> SCNNode {
+        let box = SCNBox(width: 6, height: 6, length: 6, chamferRadius: 0)
+        let boxNode = SCNNode(geometry: box)
+        let position = SCNVector3(30 , 10, 20)
+        boxNode.name = "box"
+        boxNode.position = position
+        boxNode.geometry?.firstMaterial?.diffuse.contents = "boxSide2"
+        boxNode.geometry?.firstMaterial?.shininess = 1.0
+
+        return boxNode
+    }
+    
+    class func tubeNode() -> SCNNode {
+        let tube = SCNTube(innerRadius: 8, outerRadius: 10.0, height: 30.0)
+        let tubeNode = SCNNode(geometry: tube)
+        let position = SCNVector3(-50, 20, 0)
+        tubeNode.name = "tube"
+        tubeNode.position = position
+        tubeNode.geometry?.firstMaterial?.diffuse.contents = UIColor.yellow
+        tubeNode.geometry?.firstMaterial?.shininess = 1.0
+
+        return tubeNode
+    }
+    
+    class func cylinderNode() -> SCNNode {
+        let cylinder = SCNCylinder(radius: 6, height: 30)
+        let cylinderNode = SCNNode(geometry: cylinder)
+        cylinderNode.name = "cylinder"
+        
+        let position = SCNVector3(30, 15, 50)
+        cylinderNode.position = position
+        cylinderNode.geometry?.firstMaterial?.diffuse.contents = "boxSide4"
+        cylinderNode.geometry?.firstMaterial?.shininess = 1.0
+
+        return cylinderNode
+    }
+    
+    
+    class func torusNode() -> SCNNode {
+        let torus = SCNTorus(ringRadius: 12, pipeRadius: 5)
+        let torusNode = SCNNode(geometry: torus)
+        let position = SCNVector3(-40, 15, 50)
+        torusNode.position = position
+        torusNode.geometry?.firstMaterial?.diffuse.contents = "boxSide4"
+        torusNode.geometry?.firstMaterial?.shininess = 1.0
+
+        return torusNode
+    }
+    
+    class func capsuleNode() -> SCNNode {
+        let capsule = SCNCapsule(capRadius: 10, height: 70)
+        let capsuleNode = SCNNode(geometry: capsule)
+        let position = SCNVector3(0, 25, 70)
+        capsuleNode.name = "capsule"
+        
+        capsuleNode.position = position
+        capsuleNode.geometry?.firstMaterial?.diffuse.contents = UIColor.red
+        capsuleNode.geometry?.firstMaterial?.shininess = 1.0
+        return capsuleNode
+    }
 }

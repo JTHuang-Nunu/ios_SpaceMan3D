@@ -17,6 +17,7 @@
 		281F069229F0E84E00BC5B0B /* SpaceMan3DUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281F069129F0E84E00BC5B0B /* SpaceMan3DUITests.swift */; };
 		281F069429F0E84E00BC5B0B /* SpaceMan3DUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281F069329F0E84E00BC5B0B /* SpaceMan3DUITestsLaunchTests.swift */; };
 		281F06A329F0EFB400BC5B0B /* Collectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281F06A229F0EFB400BC5B0B /* Collectable.swift */; };
+		289922B629F8FCD300306AF3 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289922B529F8FCD300306AF3 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		281F069129F0E84E00BC5B0B /* SpaceMan3DUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceMan3DUITests.swift; sourceTree = "<group>"; };
 		281F069329F0E84E00BC5B0B /* SpaceMan3DUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceMan3DUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		281F06A229F0EFB400BC5B0B /* Collectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collectable.swift; sourceTree = "<group>"; };
+		289922B529F8FCD300306AF3 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				281F067129F0E84B00BC5B0B /* AppDelegate.swift */,
 				281F067329F0E84B00BC5B0B /* art.scnassets */,
 				281F067529F0E84B00BC5B0B /* GameViewController.swift */,
+				289922B529F8FCD300306AF3 /* File.swift */,
 				281F067729F0E84B00BC5B0B /* Main.storyboard */,
 				281F067A29F0E84E00BC5B0B /* Assets.xcassets */,
 				281F067C29F0E84E00BC5B0B /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				281F06A329F0EFB400BC5B0B /* Collectable.swift in Sources */,
+				289922B629F8FCD300306AF3 /* File.swift in Sources */,
 				281F067629F0E84B00BC5B0B /* GameViewController.swift in Sources */,
 				281F067229F0E84B00BC5B0B /* AppDelegate.swift in Sources */,
 			);
